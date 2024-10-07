@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.*/
 
 # Spyder project settings
 .spyderproject
@@ -164,4 +165,10 @@ cython_debug/
 /histograms/
 /tables/
 /ntuples_reconstructed
+
+# In-/Outputs
 *.json
+*.yaml
+*.npy
+*.pdf
+log
