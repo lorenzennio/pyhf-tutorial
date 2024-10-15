@@ -6,6 +6,14 @@ The different notebooks include the following:
 * [**01-histogram-fits**](./01-histogram-fits.ipynb): This introduces the basics of [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#), how the model building works and how to include uncertainties. **We encourage you to start with this notebook.**
 * [**02-hypothesis-testing**](./02-hypothesis-testing.ipynb): This notebook goes beyond the basics in [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#), and introduces advanced methods of statistical inference, such as hypothesis testing on a very simple model.
 
+## Getting started
+
+### pixi
+
+If you have [pixi](https://pixi.sh/latest/) installed, then simply running
+
+`pixi run nb <a notebook file>`
+
 ## References
 
 ### pyhf
