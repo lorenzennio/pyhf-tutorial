@@ -7,10 +7,12 @@ The different notebooks include the following:
 * [**02-hypothesis-testing**](./02-hypothesis-testing.ipynb): This notebook goes beyond the basics in [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#), and introduces advanced methods of statistical inference, such as hypothesis testing on a very simple model.
 
 ## References
+
 ### pyhf
 * [Documentation](https://pyhf.readthedocs.io/en/v0.7.2/#)
-* [Overview slides](https://indico.belle2.org/event/8470/contributions/55827/attachments/21257/31463/pyhf.pdf)
+* [Overview slides](https://indico.belle2.org/event/12273/contributions/79573/)
 * [`pyhf` tutorial](https://pyhf.github.io/pyhf-tutorial/introduction.html)
+
 ### HistFactory and asymptotic formulae
 * [HistFactory paper](https://cds.cern.ch/record/1456844/files/CERN-OPEN-2012-016.pdf)
 * [Asymptotic formulae for likelihood-based tests of new physics](https://arxiv.org/pdf/1007.1727.pdf)
