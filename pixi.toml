@@ -17,3 +17,8 @@ matplotlib = ">=3.9.2,<4"
 iminuit = ">=2.30.1,<3"
 uproot = ">=5.4.1,<6"
 ipympl = ">=0.9.4,<0.10"
+corner = ">=2.1.0,<3"
+numpy = ">=2.1.2,<3"
+
+[pypi-dependencies]
+bayesian-pyhf = { git = "https://github.com/malin-horstmann/bayesian_pyhf.git" }
