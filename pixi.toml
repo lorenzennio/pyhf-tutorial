@@ -1,0 +1,16 @@
+[project]
+authors = ["Giordon Stark <kratsg@gmail.com>", "Lorenz Gärtner <lorenz.gaertner@physik.uni-muenchen.de>", "Sally Stefkova <slavomira.stefkova@kit.edu>"]
+channels = ["conda-forge"]
+description = "pyhf tutorial for Belle-2 Physics Week 2023"
+name = "pyhf-tutorial-belle2"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+jupyter = ">=1.1.1,<2"
+pyhf = ">=0.7.6,<0.8"
+cabinetry = ">=0.6.0,<0.7"
+matplotlib = ">=3.9.2,<4"
+iminuit = ">=2.30.1,<3"
