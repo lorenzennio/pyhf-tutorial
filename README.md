@@ -25,7 +25,7 @@ curl -fsSL https://pixi.sh/install.sh | bash
 exec bash
 ```
 
-then simply running `pixi run nb` or `pixi run nb <a notebook file>` will get you up and running in seconds!
+then simply running `pixi run nb` or `pixi run nb <a notebook file>` will get you up and running in less than a minute!
 
 ## References
 
