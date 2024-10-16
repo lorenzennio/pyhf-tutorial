@@ -3,7 +3,7 @@ authors = ["Giordon Stark <kratsg@gmail.com>", "Lorenz Gärtner <lorenz.gaertner
 channels = ["conda-forge"]
 description = "pyhf tutorial for Belle-2 Physics Week 2023"
 name = "pyhf-tutorial-belle2"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "osx-64", "linux-aarch64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
