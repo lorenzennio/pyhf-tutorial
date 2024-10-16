@@ -3,6 +3,7 @@
 Here we have three notebooks that are independent of each other, which will teach you different things about statistical inference with [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#) and convenience packages such as [cabinetry](https://cabinetry.readthedocs.io/en/latest/index.html).
 
 The different notebooks include the following:
+* [**00-Intro-and-Simple-Model.ipynb**](./00-Intro-and-Simple-Model.ipynb): This introduces the basics of HistFactory and [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#) from the ground up, how the workspaces and models can be built, as well as handling patchsets, and understanding how uncertainties work. This is a more pedagogical introduction than the next corresponding notebook.
 * [**01-histogram-fits**](./01-histogram-fits.ipynb): This introduces the basics of [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#), how the model building works and how to include uncertainties. **We encourage you to start with this notebook.**
 * [**02-hypothesis-testing**](./02-hypothesis-testing.ipynb): This notebook goes beyond the basics in [pyhf](https://pyhf.readthedocs.io/en/v0.7.2/#), and introduces advanced methods of statistical inference, such as hypothesis testing on a very simple model.
 
