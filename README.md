@@ -16,6 +16,15 @@ git clone -b belle2-physics-week https://github.com/lorenzennio/pyhf-tutorial.gi
 
 then proceed to installing your dependencies with `pip` manually or using `pixi` (see below).
 
+### pip
+
+```
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install -U pip
+python3 -m pip install -r requirements.txt
+```
+
 ### pixi
 
 If you do not have [pixi](https://pixi.sh/latest/) installed, it would be easy to get it working like so:
