@@ -8,6 +8,14 @@ The different notebooks include the following:
 
 ## Getting started
 
+First, download this repository and branch:
+
+```
+git clone -b belle2-physics-week https://github.com/lorenzennio/pyhf-tutorial.git
+```
+
+then proceed to installing your dependencies with `pip` manually or using `pixi` (see below).
+
 ### pixi
 
 If you do not have [pixi](https://pixi.sh/latest/) installed, it would be easy to get it working like so:
