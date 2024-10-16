@@ -10,9 +10,14 @@ The different notebooks include the following:
 
 ### pixi
 
-If you have [pixi](https://pixi.sh/latest/) installed, then simply running
+If you do not have [pixi](https://pixi.sh/latest/) installed, it would be easy to get it working like so:
 
-`pixi run nb <a notebook file>`
+```
+curl -fsSL https://pixi.sh/install.sh | bash
+exec bash
+```
+
+then simply running `pixi run nb` or `pixi run nb <a notebook file>` will get you up and running in seconds!
 
 ## References
 
