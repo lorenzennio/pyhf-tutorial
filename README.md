@@ -42,3 +42,60 @@ then simply running `pixi run nb` or `pixi run nb <a notebook file>` will get yo
 * [Documentation](https://cabinetry.readthedocs.io/en/latest/index.html)
 * [`Cabinetry` tutorial](https://github.com/cabinetry/cabinetry-tutorials/blob/master/example.ipynb)
 * [Tutorial from Belle II `pyhf` workshop](https://github.com/alexander-held/Belle-II-cabinetry/blob/main/talk.ipynb)
+
+
+# Timing
+
+Below is just a quick documentation of how fast it is to get things set up from scratch:
+
+```
+$ docker run -it --rm python:3 bash
+root@50f672dec6b6:/# time git clone -b belle2-physics-week https://github.com/lorenzennio/pyhf-tutorial.git
+Cloning into 'pyhf-tutorial'...
+remote: Enumerating objects: 221, done.
+remote: Counting objects: 100% (79/79), done.
+remote: Compressing objects: 100% (52/52), done.
+remote: Total 221 (delta 53), reused 52 (delta 27), pack-reused 142 (from 1)
+Receiving objects: 100% (221/221), 23.08 MiB | 13.57 MiB/s, done.
+Resolving deltas: 100% (125/125), done.
+
+real	0m2.565s
+user	0m0.707s
+sys	0m0.755s
+
+root@50f672dec6b6:/# time curl -fsSL https://pixi.sh/install.sh | bash
+This script will automatically download and install Pixi (latest) for you.
+Getting it from this url: https://github.com/prefix-dev/pixi/releases/latest/download/pixi-aarch64-unknown-linux-musl.tar.gz
+######################################################################## 100.0%
+The 'pixi' binary is installed into '/root/.pixi/bin'
+Updating '/root/.bashrc'
+Please restart or source your shell.
+
+real	0m2.885s
+user	0m0.376s
+sys	0m0.454s
+
+root@50f672dec6b6:/pyhf-tutorial# time pixi run nb
+Pixi task (nb): jupyter notebook
+[I 2024-10-16 07:47:28.838 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-10-16 07:47:28.840 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-10-16 07:47:28.842 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-10-16 07:47:28.843 ServerApp] notebook | extension was successfully linked.
+[I 2024-10-16 07:47:28.844 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2024-10-16 07:47:29.331 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-10-16 07:47:29.347 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-10-16 07:47:29.348 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-10-16 07:47:29.348 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-10-16 07:47:29.349 LabApp] JupyterLab extension loaded from /pyhf-tutorial/.pixi/envs/default/lib/python3.12/site-packages/jupyterlab
+[I 2024-10-16 07:47:29.349 LabApp] JupyterLab application directory is /pyhf-tutorial/.pixi/envs/default/share/jupyter/lab
+[I 2024-10-16 07:47:29.349 LabApp] Extension Manager is 'pypi'.
+[I 2024-10-16 07:47:29.355 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-10-16 07:47:29.357 ServerApp] notebook | extension was successfully loaded.
+[C 2024-10-16 07:47:29.357 ServerApp] Running as root is not recommended. Use --allow-root to bypass.
+
+real	0m44.216s
+user	0m25.426s
+sys	0m27.235s
+```
+
+total time: `49.666s`
