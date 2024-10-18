@@ -183,7 +183,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-7.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.4-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/numpy-2.1.2-py312h58c1407_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/numpy-1.26.4-py312heda63a1_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openjpeg-2.5.2-h488ebb8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openldap-2.6.8-hedd0468_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.3.2-hb9d3cd8_0.conda
@@ -486,7 +486,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-7.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.4-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/numpy-2.1.2-py312h2eb110b_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/numpy-1.26.4-py312h470d778_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/openjpeg-2.5.2-h0d9d63b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/openldap-2.6.8-h50f9a67_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/openssl-3.3.2-h86ecc28_0.conda
@@ -745,7 +745,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-7.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.4-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/osx-64/numpy-2.1.2-py312he4d506f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/numpy-1.26.4-py312he3a82b2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/openjpeg-2.5.2-h7310d3a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/openssl-3.3.2-hd23fc13_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/overrides-7.7.0-pyhd8ed1ab_0.conda
@@ -977,7 +977,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-7.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.4-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/numpy-2.1.2-py312h801f5e3_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/numpy-1.26.4-py312h8442bc7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjpeg-2.5.2-h9f1df11_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.3.2-h8359307_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/overrides-7.7.0-pyhd8ed1ab_0.conda
@@ -1549,22 +1549,6 @@ packages:
   - pkg:pypi/babel?source=hash-mapping
   size: 7609750
   timestamp: 1702422720584
-- kind: pypi
-  name: bayesian-pyhf
-  version: 0.1.dev321
-  url: git+https://github.com/malin-horstmann/bayesian_pyhf.git@95cf01f37c613974c8962adf9e0bb510d126f728
-  requires_dist:
-  - jax>=0.4.2
-  - jaxlib>=0.4.2
-  - matplotlib>=3.6.3
-  - numpy
-  - pyhf>=0.7.0
-  - pymc>=5.0.2
-  - pytensor
-  - coverage[toml]>=6.0.0 ; extra == 'test'
-  - pytest-mock ; extra == 'test'
-  - pytest>=6.0 ; extra == 'test'
-  requires_python: '>=3.7'
 - kind: pypi
   name: bayesian-pyhf
   version: 0.1.dev321
@@ -2882,15 +2866,6 @@ packages:
   - pkg:pypi/entrypoints?source=hash-mapping
   size: 9199
   timestamp: 1643888357950
-- kind: pypi
-  name: etuples
-  version: 0.3.9
-  url: https://files.pythonhosted.org/packages/22/60/134940a09d03786ad7267e53458a749e2f4bfaf1efd672363e87a4a13561/etuples-0.3.9.tar.gz
-  sha256: a474e586683d8ba8d842ba29305005ceed1c08371a4b4b0e0e232527137e5ea3
-  requires_dist:
-  - cons
-  - multipledispatch
-  requires_python: '>=3.8'
 - kind: pypi
   name: etuples
   version: 0.3.9
@@ -7782,15 +7757,6 @@ packages:
   - multipledispatch
   requires_python: '>=3.6'
 - kind: pypi
-  name: logical-unification
-  version: 0.4.6
-  url: https://files.pythonhosted.org/packages/c0/73/8dac224c46949e61bc52558384138a2b79fa0b7be10367074862fe9994dd/logical-unification-0.4.6.tar.gz
-  sha256: 908435123f8a106fa4dcf9bf1b75c7beb309fa2bbecf277868af8f1c212650a0
-  requires_dist:
-  - toolz
-  - multipledispatch
-  requires_python: '>=3.6'
-- kind: pypi
   name: markdown-it-py
   version: 3.0.0
   url: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
@@ -8147,18 +8113,6 @@ packages:
   url: https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl
   sha256: 84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8
   requires_python: '>=3.7'
-- kind: pypi
-  name: minikanren
-  version: 1.0.3
-  url: https://files.pythonhosted.org/packages/c8/21/1be8af0ecaf5a61abebabc8dabf63a08d72334ced5bb9f9d027fd7abbf42/miniKanren-1.0.3.tar.gz
-  sha256: 1ec8bdb01144ad5e8752c7c297fb8a122db920f859276d25a72d164e998d7f6e
-  requires_dist:
-  - toolz
-  - cons>=0.4.0
-  - multipledispatch
-  - etuples>=0.3.1
-  - logical-unification>=0.4.1
-  requires_python: '>=3.6'
 - kind: pypi
   name: minikanren
   version: 1.0.3
@@ -8540,18 +8494,18 @@ packages:
   timestamp: 1707957948029
 - kind: conda
   name: numpy
-  version: 2.1.2
-  build: py312h2eb110b_0
+  version: 1.26.4
+  build: py312h470d778_0
   subdir: linux-aarch64
-  url: https://conda.anaconda.org/conda-forge/linux-aarch64/numpy-2.1.2-py312h2eb110b_0.conda
-  sha256: eba7ea647685325e7c09d4c4445047d36e754e2444389c8b6aa41e8a4171216c
-  md5: 548aab48a0d2bf1a2a6a6542b4fd3c7c
+  url: https://conda.anaconda.org/conda-forge/linux-aarch64/numpy-1.26.4-py312h470d778_0.conda
+  sha256: 23767677a7790bee5457d5e75ebd508b9a31c5354216f4310dd1acfca3f7a6f9
+  md5: 9cebf5a06cb87d4569cd68df887af476
   depends:
   - libblas >=3.9.0,<4.0a0
   - libcblas >=3.9.0,<4.0a0
-  - libgcc >=13
+  - libgcc-ng >=12
   - liblapack >=3.9.0,<4.0a0
-  - libstdcxx >=13
+  - libstdcxx-ng >=12
   - python >=3.12,<3.13.0a0
   - python >=3.12,<3.13.0a0 *_cpython
   - python_abi 3.12.* *_cp312
@@ -8561,46 +8515,20 @@ packages:
   license_family: BSD
   purls:
   - pkg:pypi/numpy?source=hash-mapping
-  size: 7129746
-  timestamp: 1728240412984
+  size: 6614296
+  timestamp: 1707225994762
 - kind: conda
   name: numpy
-  version: 2.1.2
-  build: py312h58c1407_0
-  subdir: linux-64
-  url: https://conda.anaconda.org/conda-forge/linux-64/numpy-2.1.2-py312h58c1407_0.conda
-  sha256: 598603f9aba1a5f06d11c45fe3d25ffa5d19eb44e99244310693fdaed3538865
-  md5: b7e9a46277a1ee0afc6311e7760df0c3
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - libblas >=3.9.0,<4.0a0
-  - libcblas >=3.9.0,<4.0a0
-  - libgcc >=13
-  - liblapack >=3.9.0,<4.0a0
-  - libstdcxx >=13
-  - python >=3.12,<3.13.0a0
-  - python_abi 3.12.* *_cp312
-  constrains:
-  - numpy-base <0a0
-  license: BSD-3-Clause
-  license_family: BSD
-  purls:
-  - pkg:pypi/numpy?source=hash-mapping
-  size: 8447869
-  timestamp: 1728240376876
-- kind: conda
-  name: numpy
-  version: 2.1.2
-  build: py312h801f5e3_0
+  version: 1.26.4
+  build: py312h8442bc7_0
   subdir: osx-arm64
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/numpy-2.1.2-py312h801f5e3_0.conda
-  sha256: 7e6840963d5395a59cb0aca32d43fd4e539c00a0677fcad16e4a3ab1f5c7aab7
-  md5: 3f9101c02190f155b6525490238fc794
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/numpy-1.26.4-py312h8442bc7_0.conda
+  sha256: c8841d6d6f61fd70ca80682efbab6bdb8606dc77c68d8acabfbd7c222054f518
+  md5: d83fc83d589e2625a3451c9a7e21047c
   depends:
-  - __osx >=11.0
   - libblas >=3.9.0,<4.0a0
   - libcblas >=3.9.0,<4.0a0
-  - libcxx >=17
+  - libcxx >=16
   - liblapack >=3.9.0,<4.0a0
   - python >=3.12,<3.13.0a0
   - python >=3.12,<3.13.0a0 *_cpython
@@ -8611,21 +8539,20 @@ packages:
   license_family: BSD
   purls:
   - pkg:pypi/numpy?source=hash-mapping
-  size: 6436873
-  timestamp: 1728240394809
+  size: 6073136
+  timestamp: 1707226249608
 - kind: conda
   name: numpy
-  version: 2.1.2
-  build: py312he4d506f_0
+  version: 1.26.4
+  build: py312he3a82b2_0
   subdir: osx-64
-  url: https://conda.anaconda.org/conda-forge/osx-64/numpy-2.1.2-py312he4d506f_0.conda
-  sha256: 23e0df322c9ca76375d98ff85d4b901477894969dd15db1ceb17c64434c57f82
-  md5: f3fd3efe976ed50ae5b5b0921cbf497f
+  url: https://conda.anaconda.org/conda-forge/osx-64/numpy-1.26.4-py312he3a82b2_0.conda
+  sha256: 6152b73fba3e227afa4952df8753128fc9669bbaf142ee8f9972bf9df3bf8856
+  md5: 96c61a21c4276613748dba069554846b
   depends:
-  - __osx >=10.13
   - libblas >=3.9.0,<4.0a0
   - libcblas >=3.9.0,<4.0a0
-  - libcxx >=17
+  - libcxx >=16
   - liblapack >=3.9.0,<4.0a0
   - python >=3.12,<3.13.0a0
   - python_abi 3.12.* *_cp312
@@ -8635,8 +8562,32 @@ packages:
   license_family: BSD
   purls:
   - pkg:pypi/numpy?source=hash-mapping
-  size: 7466638
-  timestamp: 1728240348311
+  size: 6990646
+  timestamp: 1707226178262
+- kind: conda
+  name: numpy
+  version: 1.26.4
+  build: py312heda63a1_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/numpy-1.26.4-py312heda63a1_0.conda
+  sha256: fe3459c75cf84dcef6ef14efcc4adb0ade66038ddd27cadb894f34f4797687d8
+  md5: d8285bea2a350f63fab23bf460221f3f
+  depends:
+  - libblas >=3.9.0,<4.0a0
+  - libcblas >=3.9.0,<4.0a0
+  - libgcc-ng >=12
+  - liblapack >=3.9.0,<4.0a0
+  - libstdcxx-ng >=12
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  constrains:
+  - numpy-base <0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls:
+  - pkg:pypi/numpy?source=hash-mapping
+  size: 7484186
+  timestamp: 1707225809722
 - kind: conda
   name: openjpeg
   version: 2.5.2
