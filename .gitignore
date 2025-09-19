@@ -164,4 +164,6 @@ cython_debug/
 /histograms/
 /tables/
 /ntuples_reconstructed
-*.json
+*.json# pixi environments
+.pixi/*
+!.pixi/config.toml
