@@ -14,7 +14,7 @@ The different notebooks include the following:
 First, download this repository and branch:
 
 ```
-git clone -b belle2-physics-week https://github.com/lorenzennio/pyhf-tutorial.git
+git clone -b b2starter-kit https://github.com/lorenzennio/pyhf-tutorial.git
 ```
 
 then proceed to installing your dependencies with `pip` manually or using `pixi` (see below).
@@ -22,8 +22,8 @@ then proceed to installing your dependencies with `pip` manually or using `pixi`
 ### pip
 
 ```
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 python3 -m pip install -U pip
 python3 -m pip install -r requirements.txt
 ```
@@ -33,11 +33,12 @@ python3 -m pip install -r requirements.txt
 If you do not have [pixi](https://pixi.sh/latest/) installed, it would be easy to get it working like so:
 
 ```
-curl -fsSL https://pixi.sh/install.sh | bash
-exec bash
+curl -fsSL https://pixi.sh/install.sh | sh
 ```
 
 then simply running `pixi run nb` or `pixi run nb <a notebook file>` will get you up and running in less than a minute!
+
+You can also start a `jupyter lab` with `pixi run jlab`.
 
 ## References
 
